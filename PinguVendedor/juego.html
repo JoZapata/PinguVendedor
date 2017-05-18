@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>title</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/modal.css">
+	    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+		<!--creditos-->
+		<!--
+		<a href='http://www.freepik.com/free-vector/supermarket-shelves_724056.htm'>Designed by Freepik</a>
+		<a href='http://www.freepik.com/free-vector/supermarket-graphic-elements-set_724038.htm'>Designed by Freepik</a>
+		-->
+
+	</head>
+	<body class="body-game01">
+		<!-- Main -->
+		<div class="main-game01">
+			<div class="listaArticulos">
+				<div id="demo">
+					<label>Lista de productos: </label><br>
+				</div>
+				<button id ="BtnIrTienda">Ir a la tienda</button>
+			</div>
+
+			<section class="statusGame">
+			    <div id = "total">
+					<label></label>
+				</div>
+			</section>
+
+			<section class="objectsToBuy">
+
+			    <!--modal de la tienda-->
+			    <div id="modalTienda" class="modal">
+					<div class="modal-content">
+						<span class ="close">x</span>
+
+						<div id="shop">
+
+							<div id="firstOptions">
+								<label>Pescado</label><br>
+								<div class ="option1">
+									<input type="radio" id="opt-psc-1"  name="pescado" value="1kg" onclick="verify_first_radio_group('#opt-psc-1')">
+									<label for="opt-psc-1">1 kg de pescado</label>
+								</div>
+								<div class ="option2">
+									<input type="radio" id="opt-psc-2" name="pescado" value="2kg" onclick="verify_first_radio_group('#opt-psc-2')">
+									<label for="opt-psc-2">2 kg de pescado</label>
+								</div>
+								<div class ="option3">
+									<input type="radio" id="opt-psc-3" name="pescado" value="3kg" onclick="verify_first_radio_group('#opt-psc-3')">
+									<label for="opt-psc-3">3 kg de pescado</label><br>
+								</div>
+
+							</div>
+							<div id ="option1-selected">
+								<!--<img id="imgOpc1" src="imgs/alimentos/arroz1.png">-->
+								<div id="imgOpc1"></div>
+							</div>
+
+							<div id="secondOptions">
+								<label>Pollo</label><br>
+								<div class ="option1">
+									<input type="radio" id="opt-pol-1" name="pollo" value="1kg" onclick="verify_second_radio_group('#opt-pol-1')">
+									<label for="opt-pol-1">1 kg de pollo</label>
+								</div>
+								<div class ="option2">
+									<input type="radio" id="opt-pol-2" name="pollo" value="2kg" onclick="verify_second_radio_group('#opt-pol-2')">
+									<label for="opt-pol-2">2 kg de pollo</label>
+								</div>
+								<div class ="option3">
+									<input type="radio" id="opt-pol-3" name="pollo" value="3kg" onclick="verify_second_radio_group('#opt-pol-3')">
+									<label for="opt-pol-3">3 kg de pollo</label><br>
+								</div>
+							</div>
+							<div id ="option2-selected">
+								<!--<img id="imgOpc2" src="imgs/alimentos/arroz1.png">-->
+								<div id="imgOpc2"></div>
+							</div>
+
+							<div id="thirdOptions">
+								<label>Atun</label><br>
+								<div class ="option1">
+									<input type="radio" id="opt-atn-1" name="atun" value="1kg" onclick="verify_third_radio_group('#opt-atn-1')">
+									<label for="opt-atn-1">1 lata de atun</label>
+								</div>
+								<div class ="option2">
+									<input type="radio" id="opt-atn-4" name="atun" value="4kg" onclick="verify_third_radio_group('#opt-atn-2')">
+									<label for="opt-atn-4">4 lata de atun</label>
+								</div>
+								<div class ="option3">
+									<input type="radio" id="opt-atn-6" name="atun" value="6kg" onclick="verify_third_radio_group('#opt-atn-3')">
+									<label for="opt-atn-6">6 lata de atun</label><br>
+								</div>
+							</div>
+							<div id ="option3-selected">
+								<div id="imgOpc3"></div>
+							</div>
+
+							<div id="fourthOptions">
+								<label>Sardina</label><br>
+								<div class ="option1">
+									<input type="radio" id="opt-sdn-1" name="sardina" value="1kg" onclick="verify_fourth_radio_group('#opt-sdn-1')">
+									<label for="opt-sdn-1">1 lata de sardina</label>
+								</div>
+								<div class ="option2">
+									<input type="radio" id="opt-sdn-3" name="sardina" value="3kg" onclick="verify_fourth_radio_group('#opt-sdn-2')">
+									<label for="opt-sdn-3">3 lata de sardina</label>
+								</div>
+								<div class ="option3">
+									<input type="radio" id="opt-sdn-5" name="sardina"  value="5kg" onclick="verify_fourth_radio_group('#opt-sdn-3')">
+									<label for="opt-sdn-5">5 lata de sardina</label>
+								</div>
+							</div>
+							<div id ="option4-selected">
+								<div id="imgOpc4"></div>
+							</div>
+
+							<div id="products-set">
+								<button id="next-arrow"/>
+								<button id="prev-arrow"/>
+							</div>
+
+							<div id="comprar-div">
+								<button id="comprarbutton" onclick="generarCompras2()">COMPRAR</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!--modal de ayuda-->
+			    <div id="modalhelp" class="modal">
+					<div class="modal-content-help">
+						<span class ="close">x</span>
+
+
+						<div id="helpInfo">
+						_____________________ <br>
+						REGLAS DEl NIVEL 1:	<br>
+						_____________________
+
+							<div id="helplvl1">
+								<p id="hip1">
+								* Seleccionar un objeto a comprar (1 jugo, 2 jugos, 1 pan, etc.)
+								</p>
+								<p id="hip2">
+									* Verificar mediante la imagen
+									<img id="hip2Img" src="imgs/linr_products.png">
+								</p>
+								<p id="hip3">
+									* Repetir por cada opción de artículos
+									<img id="hip3Img" src="imgs/some_products.png">
+								</p>
+								<p id="hip4">
+									* Al terminar, seleccionar el botón comprar
+									<img id="hip4Img" src="imgs/bot_com.png">
+								</p>
+							</div>
+
+
+						_____________________ <br>
+						REGLAS DEL NIVEL 2: <br>
+						_____________________
+							<div id="helplvl2">
+								<p id="hip1">
+								* Seleccionar un objeto a comprar (1 jugo, 2 jugos, 1 pan, etc.)
+								</p>
+								<p id="hip2">
+									* Verificar mediante la imagen
+									<img id="hip2Img" src="imgs/linr_products.png">
+								</p>
+								<p id="hip3">
+									* Repetir por cada opción de artículos
+									<img id="hip3Img" src="imgs/some_products.png">
+								</p>
+								<p id="hip4">
+									* Al terminar, seleccionar el botón comprar
+									<img id="hip4Img" src="imgs/bot_com.png">
+								</p>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!--dialogs-->
+				<div id="successfulDialog" title="¡Bien hecho!">
+					<div id="dialog-content">
+						<img src="imgs/success-icon.png">
+	  					<p>GANASTE</p>
+	  					<p>Pasas al siguiente nivel</p>
+	  					<a class="boton" id="nextLvlButton" onclick="diposeDialog('#successfulDialog')">Siguiente</a>
+					</div>
+				</div>
+
+				<div id="failDialog" title="¡Qué mal!">
+					<div id="dialog-content">
+						<img src="imgs/fail-icon.png">
+	  					<p>PERDISTE</p>
+	  					<p>Regresas al nivel 1</p>
+	  					<a class="boton" id="finishButton" onclick="diposeDialog('#failDialog')">Terminar</a>
+					</div>
+				</div>
+
+			</section>
+		</div>
+
+		<div id="door">
+
+		</div>
+
+
+		<a href="juego01.html" class="boton" id = "exitGame"> Salir </a>
+
+		<a  class="boton" onclick="soundControl()"> Sonido</a>
+
+		<audio id="audio">
+			<source src="media/song1.mp3" id="audio" type="audio/mpeg">
+		</audio>
+
+
+
+		<a class="boton" id ="helpBtn">Ayuda</a>
+
+		<!-- footer -->
+		<footer>
+			<p>UADY - www.matematicas.uady.mx</p>
+		</footer>
+
+	</body>
+</html>

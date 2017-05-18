@@ -1,0 +1,399 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*seleccion y generales*/
+body {
+	font-family: MyGameFont;
+	background: #d7e0db;
+}
+
+header {
+	font-size: 40px;
+	font-style: normal;
+	text-align: center;
+	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+
+#price-1,#price-2,#price-3,#price-4{
+	color:green;
+}
+
+header, .main{
+	width: 90%;
+	max-width: 1000px;
+	margin:20px auto;
+	color: #000099;
+}
+
+.table-games {
+	text-align: center;
+}
+
+#diviertete {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+#game3 {
+	margin-left: 25%;
+	margin-right: 35%;
+	text-align: center;
+}
+
+img {
+	width: 247px;
+	height: 181px;
+}
+
+footer {
+	background: #D4D4D2;
+	text-align: center;
+	margin:20px auto;
+	/*color: #fff;*/
+	clear: both;
+	padding: 10px 0px;
+}
+
+.boton {
+	display: inline-block;
+	color: #FFF;
+	text-decoration: none;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 60px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor:pointer;
+	background: #99CCFF;
+	font-size: 20px;
+	padding: 8px 14px 9px;
+	text-decoration: none;
+	margin-bottom: 8px;
+	margin-top: 2px;
+}
+
+.boton:active{
+	top: 1px;
+}
+
+.boton:hover{
+	background-color: #80BFFF;
+}
+
+
+
+/******************************
+* Historia del primer juego
+******************************/
+
+@font-face{
+	font-family: MyGameFont;
+	src: url(../fonts/Chewy/Chewy.ttf);
+}
+
+@font-face{
+	font-family: MyGametext;
+	src: url(../fonts/GloriaHallelujah.ttf);
+}
+
+#historia {
+	max-width: 50%;
+	background: #66b3ff;
+	margin-left: 25%;
+	margin-right: 25%;
+	/*margin-bottom: 2%;*/
+	font-family: MyGameFont;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	font-size: 22px;
+	border-radius: 20px;
+}
+
+.body-historia {
+	/*background: url(../imgs/scene4pu.jpg) no-repeat
+	center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size: cover;*/
+
+
+	background: url(../imgs/scene.jpg);
+	background-repeat: no-repeat;
+	overflow: auto;
+	background-size: 100% 100%;
+}
+
+/*#pin1historia {
+	margin-left: 12%;
+	margin-top: 2%;
+}*/
+
+#options{
+	padding-top: 8%;
+}
+
+#backButton{
+	float: left;
+	margin-top: 180px;
+}
+
+#nextButton{
+	float: right;
+	margin-top: 180px;
+}
+
+/******************************
+* Diseño del primer juego
+******************************/
+
+.body-game01 {
+    overflow: auto;
+    background: url(../imgs/scene.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-game01 {
+	padding-bottom: 35%;
+}
+
+.listaArticulos {
+    float: left;
+    width: 300px;
+    height: 280px;
+    padding-top: 70px;
+    /*text-align: right;*/
+
+    background: url(../imgs/note.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 350px 300px;
+}
+
+/*lo que esta dentro de la nota*/
+#demo {
+	padding-top:39px;
+	padding-left: 35px;
+}
+
+#BtnIrTienda{
+	margin-left: 90px;
+}
+
+#door {
+	position: absolute;
+	height: 21%;
+	width: 10.8%;
+	border: none;
+
+	top: 62%;
+	left: 66.9%;
+}
+
+.statusGame {
+    /*margin-left: 206px;
+    background-color: #80BFFF;
+    color: #fff;
+    padding-left: 5px;
+    border: 2px solid blue;
+    border-radius: 5px;*/
+
+    float: right;
+    width: 300px;
+    height: 280px;
+    padding-top: 70px;
+
+    background: url(../imgs/dinero.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 300px 300px;
+}
+
+#total {
+	padding-top: 130px;
+	padding-left: 130px;
+}
+
+.objectsToBuy {
+    margin-left: 206px;
+    padding-bottom: 5%;
+    padding-left: 5px;
+
+}
+
+button {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #80BFFF;
+  border: none;
+  border-radius: 15px;
+  /*box-shadow: 0 9px #999;*/
+}
+
+button:hover {background-color: #4286f4}
+
+button:active {
+  background-color: #4286f4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+input[type="checkbox"]{
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+#helpBtn{
+	float: right;
+}
+
+/*modificar modal de ayuda*/
+
+/*modificar la imagen del modal*/
+#shop {
+	margin: none;
+	background: url(../imgs/supermarket_game.jpg);
+	background-position: center;
+	/*background-repeat: no-repeat;*/
+	background-size: 90%;
+	width: 100%;
+	height: 100%;
+}
+
+
+.modal-content {
+    width: 1048px;
+	height: 650px;
+}
+
+/*Ordenar los objetos de la tienda*/
+#firstOptions {
+	padding-top: 285px;
+}
+
+#secondOptions {
+	padding-top: 8px;
+}
+
+#thirdOptions {
+	padding-top: 6px;
+}
+
+#fourthOptions {
+	/*padding-top: 2px;*/
+}
+
+#firstOptions, #secondOptions, #thirdOptions, #fourthOptions {
+	height: 70px;
+	font-size: 20px;
+	overflow: hidden;
+	padding-left: 25%;
+	/*padding-right: 20%;*/
+}
+
+/*alinear divs de opciones*/
+.option1, .option2, .option3 {
+	float: left;
+	padding-right: 10px;
+}
+
+/*divs de las imagenes*/
+
+#option1-selected,#option2-selected,#option3-selected,#option4-selected{
+	position: relative;
+	float: right;
+	padding-right: 210px;
+	padding-top: 7px;
+	width: 80px;
+    height: 60px;
+}
+
+#option1-selected{
+	padding-top: 285px;
+	padding-right: 200px;
+}
+
+#option4-selected{
+	padding-top: 1px;
+}
+
+#firstOptions, #option1-selected {
+	display: inline-block;
+}
+#secondOptions, #option2-selected {
+	display: inline-block;
+}
+#thirdOptions, #option3-selected {
+	display: inline-block;
+}
+#fourthOptions, #option4-selected {
+	display: inline-block;
+}
+
+#imgOpc1,#imgOpc2,#imgOpc3,#imgOpc4{
+	width: 80px;
+    height: 60px;
+}
+
+
+#comprarbutton{
+	text-align: center;
+}
+#exitGame{
+	float: left;
+}
+
+#audio{
+	float: left;
+}
+
+#comprar-div{
+	text-align: center;
+}
+
+#next-arrow {
+  background: url('../imgs/arrowN.png') left center no-repeat;
+  float: right;
+}
+#prev-arrow {
+  background: url('../imgs/arrowP.png') left center no-repeat;
+  float: left;
+}
+
+#next-arrow, #prev-arrow{
+	width: 100px;
+	height: 74px;
+	background-size: 90px;
+}
+
+/*dialogs*/
+
+#successfulDialog, #failDialog{
+	background-color: #e6f5ff;
+}
+
+#dialog-content{
+    text-align: center;
+    font-family: MyGameFont;
+	font-weight: bold;
+}
+
+#nextLvlButton, #finishButton{
+	color: #FFF;
+}
+
+.ui-dialog-titlebar-close{
+	visibility: hidden;
+}

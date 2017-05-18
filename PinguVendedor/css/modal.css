@@ -1,0 +1,77 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    padding: 20px;
+    background-color: #fefefe;
+    margin: 1% auto; /* 1% from the top and centered */
+    border: 1px solid #888;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*---------------modal ayuda----------------------------------*/
+.modal-content-help {
+    padding: 20px;
+    background-color: #fefefe;
+    margin: 1% auto; /* 1% from the top and centered */
+    border: 10px solid #80BFFF;
+    border-radius: 20px;
+    overflow: auto;
+    /*width: 524px;
+    height: 715px;*/
+    width: 524px;
+    height: 500px;
+
+}
+
+/*help text*/
+#hip4,#hip3,#hip2{
+    padding-top: 50px;
+}
+
+/*help imgs*/
+#hip2Img, #hip3Img, #hip4Img{
+    padding-left: 25px;
+    position: relative;
+}
+
+#hip3Img, #hip4Img{
+    width: 80px;
+    height: 60px;
+}
+
+#hip2Img{
+    width: 140px;
+    height: 60px;
+}
+
+#helpInfo{
+    padding-top: 30px;
+    font-size: 20px;
+}
